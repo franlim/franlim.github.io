@@ -18,9 +18,32 @@
             margin: auto;
         }
 
+        /* HEADER */
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            margin-bottom: 25px;
+        }
+
+        .profile-picture {
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid #000;
+        }
+
+        .header-info h1 {
+            margin: 0 0 10px 0;
+        }
+
+        .header-info p {
+            margin: 2px 0;
+        }
+
         h1 {
-            text-align: center;
-            margin-bottom: 5px;
+            font-size: 28px;
         }
 
         h2 {
@@ -42,11 +65,6 @@
             margin-top: 5px;
         }
 
-        .contact {
-            text-align: center;
-            margin-bottom: 25px;
-        }
-
         .project {
             margin-bottom: 15px;
         }
@@ -57,15 +75,30 @@
 
 <div class="container">
 
-    <h1>MAR RUSSEL D. FERNANDEZ</h1>
+    <!-- HEADER -->
+    <div class="header">
 
-    <div class="contact">
-        <p>+63 919-983-0956</p>
-        <p>madu.fernandez.up@phinmaed.com</p>
-        <p>linkedin.com/in/mar-russel-fernandez</p>
-        <p>Sto.Nino East St. Lingayen, Pangasinan</p>
+        <img 
+            src="FernandezProfile.jpg" 
+            alt="Profile Picture"
+            class="profile-picture"
+        >
+
+        <div class="header-info">
+
+            <h1>MAR RUSSEL D. FERNANDEZ</h1>
+
+            <p>+63 919-983-0956</p>
+            <p>madu.fernandez.up@phinmaed.com</p>
+            <p>linkedin.com/in/mar-russel-fernandez</p>
+            <p>Sto.Nino East St. Lingayen, Pangasinan</p>
+
+        </div>
+
     </div>
 
+
+    <!-- PROFILE SUMMARY -->
     <h2>PROFILE SUMMARY</h2>
 
     <p>
@@ -77,6 +110,8 @@
         JavaScript, and PHP.
     </p>
 
+
+    <!-- EDUCATION -->
     <h2>EDUCATION</h2>
 
     <h3>Bachelor of Science in Information Technology</h3>
@@ -87,6 +122,8 @@
     <p>Pangasinan National High School</p>
     <p>(2017 - 2023)</p>
 
+
+    <!-- TECHNICAL SKILLS -->
     <h2>TECHNICAL SKILLS</h2>
 
     <ul>
@@ -103,6 +140,8 @@
         <li>Figma</li>
     </ul>
 
+
+    <!-- CORE WORK SKILLS -->
     <h2>CORE WORK SKILLS</h2>
 
     <ul>
@@ -114,20 +153,29 @@
         <li>Communication</li>
     </ul>
 
+
+    <!-- SCHOOL PROJECTS -->
     <h2>SCHOOL PROJECTS</h2>
 
     <div class="project">
+
         <h3>AtmoCast</h3>
+
         <p>
             AtmoCast is a weather application that will obtain and show current weather information.
             Users of the program will be able to enter the name of a city and obtain weather data for
             that location, including the temperature and humidity.
         </p>
+
         <p><strong>Technology:</strong> Python</p>
+
     </div>
 
+
     <div class="project">
+
         <h3>Language Voyage</h3>
+
         <p>
             Language Voyage is an interactive language learning platform designed to make exploring
             new languages fun and engaging. Users can begin their journey by selecting a country,
@@ -135,25 +183,37 @@
             interface, visual cues like national flags, and simple navigation, learners can easily
             start practicing new words and phrases.
         </p>
+
         <p><strong>Technology:</strong> HTML, CSS, JS</p>
+
     </div>
 
+
     <div class="project">
+
         <h3>Bus Buddy (Bus Seat Reservation)</h3>
+
         <p>
             Bus Buddy is a mobile application designed to simplify the process of reserving bus seats
             for commuters traveling between Dagupan and Cubao, specifically catering to the Five Star Terminal.
         </p>
+
         <p><strong>Technology:</strong> HTML, CSS, JS</p>
+
     </div>
 
+
     <div class="project">
+
         <h3>SereniTea</h3>
+
         <p>
             SereniTea is a dual-platform made to ease service and product administration for vendors
             and enhance the experience of customers in selecting, customizing, and ordering their milktea.
         </p>
+
         <p><strong>Technology:</strong> Kotlin, JS, PHP, HTML</p>
+
 
 </body>
 </html>
