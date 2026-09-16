@@ -1,9 +1,11 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Abegail Paragas Zarate - CV</title>
+
 <style>
     @page {
         size: A4;
@@ -36,8 +38,29 @@
         page-break-after: auto;
     }
 
+    /* =========================
+       HEADER
+       ========================= */
+
     .header {
-        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        text-align: left;
+    }
+
+    .profile-pic {
+        width: 24mm;
+        height: 24mm;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 1px solid #d9d9d9;
+        flex-shrink: 0;
+    }
+
+    .header-info {
+        flex: 0 1 auto;
     }
 
     .name {
@@ -61,6 +84,10 @@
         text-decoration: none;
     }
 
+    /* =========================
+       SECTIONS
+       ========================= */
+
     .section {
         margin-top: 7px;
     }
@@ -79,11 +106,19 @@
         margin: 0;
     }
 
+    /* =========================
+       PROFILE SUMMARY
+       ========================= */
+
     .summary {
         font-size: 8.05px;
         line-height: 1.35;
         text-align: left;
     }
+
+    /* =========================
+       EDUCATION
+       ========================= */
 
     .edu-item {
         margin-bottom: 6px;
@@ -103,6 +138,10 @@
         margin-top: 1px;
     }
 
+    /* =========================
+       SKILLS
+       ========================= */
+
     .skills-block {
         font-size: 8px;
         line-height: 1.35;
@@ -112,6 +151,10 @@
     .label {
         font-weight: 700;
     }
+
+    /* =========================
+       PROJECTS
+       ========================= */
 
     .project {
         margin: 0 0 8px;
@@ -141,6 +184,10 @@
         line-height: 1.35;
     }
 
+    /* =========================
+       PAGE 2
+       ========================= */
+
     .page-two {
         padding-top: 13mm;
     }
@@ -152,6 +199,10 @@
     .page-two .project-desc {
         margin-top: 7px;
     }
+
+    /* =========================
+       SEMINARS
+       ========================= */
 
     .seminar {
         margin: 0 0 13px;
@@ -171,6 +222,10 @@
         text-transform: uppercase;
     }
 
+    /* =========================
+       PRINT NOTE
+       ========================= */
+
     .print-note {
         width: 210mm;
         margin: 10px auto;
@@ -178,6 +233,10 @@
         font: 12px Arial, sans-serif;
         color: #666;
     }
+
+    /* =========================
+       PRINT
+       ========================= */
 
     @media print {
         html, body {
@@ -193,6 +252,10 @@
             display: none;
         }
     }
+
+    /* =========================
+       RESPONSIVE
+       ========================= */
 
     @media screen and (max-width: 850px) {
         .resume,
@@ -210,159 +273,398 @@
 
 <body>
 
-<div class="print-note">Resume preview — use Ctrl+P and select A4 / 100% scale for printing.</div>
+<div class="print-note">
+    Resume preview — use Ctrl+P and select A4 / 100% scale for printing.
+</div>
 
-<!-- PAGE 1 -->
+
+<!-- =====================================================
+     PAGE 1
+     ===================================================== -->
+
 <section class="resume">
+
+    <!-- HEADER -->
     <header class="header">
-        <h1 class="name">ABE GAIL PARAGAS ZARATE</h1>
-        <div class="contact">
-            San Carlos City, Pangasinan, Philippines • +63992 270 6768 • gailzaratee@gmail.com<br>
-            <a href="https://www.linkedin.com/in/gail-zarate-61ba83a2" target="_blank">www.linkedin.com/in/gail-zarate-61ba83a2</a> •
-            <a href="https://github.com/abegailzarate" target="_blank">https://github.com/abegailzarate</a>
+
+        <!-- PROFILE PHOTO -->
+        <img
+            src="formal-pic.png"
+            alt="Abegail Paragas Zarate"
+            class="profile-pic"
+        >
+
+        <!-- NAME + CONTACT -->
+        <div class="header-info">
+
+            <h1 class="name">
+                ABEGAIL PARAGAS ZARATE
+            </h1>
+
+            <div class="contact">
+
+                San Carlos City, Pangasinan, Philippines
+                • +63992 270 6768
+                • gailzaratee@gmail.com
+                <br>
+
+                <a
+                    href="https://www.linkedin.com/in/gail-zarate-61ba83a2"
+                    target="_blank"
+                >
+                    www.linkedin.com/in/gail-zarate-61ba83a2
+                </a>
+
+                •
+
+                <a
+                    href="https://github.com/abegailzarate"
+                    target="_blank"
+                >
+                    https://github.com/abegailzarate
+                </a>
+
+            </div>
+
         </div>
+
     </header>
 
+
+    <!-- PROFILE SUMMARY -->
     <section class="section">
-        <h2 class="section-title">PROFILE SUMMARY</h2>
+
+        <h2 class="section-title">
+            PROFILE SUMMARY
+        </h2>
+
         <p class="summary">
-            An undergraduate Bachelor of Science in Information Technology student majoring in Business Informatics,
-            aspiring to build a career as a Data Analyst. Proficient in Microsoft Excel and MySQL, with working
-            knowledge of Python and Tableau. Skilled in data cleaning, data visualization, dashboard development,
-            and UI/UX design. Demonstrates strong analytical thinking, leadership, and project management abilities
-            through academic projects. Detail-oriented, adaptable, and committed to continuous learning and professional
-            growth.
+            An undergraduate Bachelor of Science in Information Technology student
+            majoring in Business Informatics, aspiring to build a career as a Data
+            Analyst. Proficient in Microsoft Excel and MySQL, with working knowledge
+            of Python and Tableau. Skilled in data cleaning, data visualization,
+            dashboard development, and UI/UX design. Demonstrates strong analytical
+            thinking, leadership, and project management abilities through academic
+            projects. Detail-oriented, adaptable, and committed to continuous
+            learning and professional growth.
         </p>
+
     </section>
 
+
+    <!-- EDUCATION -->
     <section class="section">
-        <h2 class="section-title">EDUCATION</h2>
+
+        <h2 class="section-title">
+            EDUCATION
+        </h2>
 
         <div class="edu-item">
+
             <div class="edu-row">
-                <span>Bachelor of Science in Information Technology</span>
-                <span>2023 - Present</span>
+                <span>
+                    Bachelor of Science in Information Technology
+                </span>
+
+                <span>
+                    2023 - Present
+                </span>
             </div>
-            <div class="edu-sub">Major in Business Informatics</div>
-            <div class="edu-sub">PHINMA – University of Pangasinan</div>
+
+            <div class="edu-sub">
+                Major in Business Informatics
+            </div>
+
+            <div class="edu-sub">
+                PHINMA – University of Pangasinan
+            </div>
+
         </div>
+
 
         <div class="edu-item">
+
             <div class="edu-row">
-                <span>Accounting, Business and Management</span>
-                <span>2022 – 2020</span>
+                <span>
+                    Accounting, Business and Management
+                </span>
+
+                <span>
+                    2022 – 2020
+                </span>
             </div>
-            <div class="edu-sub">Virgen Milagrosa University Foundation – Senior High School</div>
+
+            <div class="edu-sub">
+                Virgen Milagrosa University Foundation – Senior High School
+            </div>
+
         </div>
+
     </section>
 
+
+    <!-- SKILLS AND INTEREST -->
     <section class="section">
-        <h2 class="section-title">SKILLS AND INTEREST</h2>
+
+        <h2 class="section-title">
+            SKILLS AND INTEREST
+        </h2>
+
 
         <div class="skills-block">
-            <span class="label">Technical Skills:</span><br>
-            Proficient in Microsoft Excel, MySQL and tableau with working knowledge of Python, React.js, HTML,
-            CSS, Java, JavaScript, C#, Unity, Figma, GitHub
+
+            <span class="label">
+                Technical Skills:
+            </span>
+
+            <br>
+
+            Proficient in Microsoft Excel, MySQL and Tableau with working
+            knowledge of Python, React.js, HTML, CSS, Java, JavaScript,
+            C#, Unity, Figma, GitHub
+
         </div>
 
-        <div class="skills-block">
-            <span class="label">Core / Work Skills:</span><br>
-            Analytical thinking, data organization, problem-solving, teamwork, and effective communication, team
-            leadership, and project management. Experienced in turning complex data into actionable business insights.
-        </div>
 
         <div class="skills-block">
-            <span class="label">Interests:</span><br>
-            Business analytics, data visualization, exploring emerging analytics tools, and developing technology
-            solutions that improve business processes.
+
+            <span class="label">
+                Core / Work Skills:
+            </span>
+
+            <br>
+
+            Analytical thinking, data organization, problem-solving,
+            teamwork, and effective communication, team leadership,
+            and project management. Experienced in turning complex data
+            into actionable business insights.
+
         </div>
+
+
+        <div class="skills-block">
+
+            <span class="label">
+                Interests:
+            </span>
+
+            <br>
+
+            Business analytics, data visualization, exploring emerging
+            analytics tools, and developing technology solutions that
+            improve business processes.
+
+        </div>
+
     </section>
 
+
+    <!-- PROJECTS -->
     <section class="section">
-        <h2 class="section-title">PROJECTS</h2>
+
+        <h2 class="section-title">
+            PROJECTS
+        </h2>
+
 
         <div class="project">
-            <div class="project-title"><i>PicPerfect App – November 2023</i></div>
-            <div class="project-role">Project Manager / Front-end Developer</div>
+
+            <div class="project-title">
+                <i>PicPerfect App – November 2023</i>
+            </div>
+
+            <div class="project-role">
+                Project Manager / Front-end Developer
+            </div>
+
             <p class="project-desc">
-                Developed an image editor application that enhances and improves user images with interactive editing tools.
+                Developed an image editor application that enhances and
+                improves user images with interactive editing tools.
             </p>
+
         </div>
 
+
         <div class="project">
-            <div class="project-title"><i>Diy Dynasty – April 2024</i></div>
-            <div class="project-role">Project Manager / Front-end Developer</div>
+
+            <div class="project-title">
+                <i>Diy Dynasty – April 2024</i>
+            </div>
+
+            <div class="project-role">
+                Project Manager / Front-end Developer
+            </div>
+
             <p class="project-desc">
-                Developed a website showcasing creative crafting ideas from individuals, providing a platform to share and explore projects.
+                Developed a website showcasing creative crafting ideas
+                from individuals, providing a platform to share and
+                explore projects.
             </p>
+
         </div>
+
     </section>
+
 </section>
 
-<!-- PAGE 2 -->
+
+<!-- =====================================================
+     PAGE 2
+     ===================================================== -->
+
 <section class="resume page-two">
+
+
+    <!-- i-QUIZ -->
     <section class="project">
-        <div class="project-title"><i>i-Quiz – April 2024</i></div>
-        <div class="project-role">Project Manager</div>
+
+        <div class="project-title">
+            <i>i-Quiz – April 2024</i>
+        </div>
+
+        <div class="project-role">
+            Project Manager
+        </div>
+
         <p class="project-desc">
-            Developed an interactive educational quiz application aimed at enhancing student engagement and learning through gamified experiences.
+            Developed an interactive educational quiz application aimed
+            at enhancing student engagement and learning through
+            gamified experiences.
         </p>
+
     </section>
 
+
+    <!-- ENKANTO ESCAPADE -->
     <section class="project">
-        <div class="project-title"><i>Enkanto Escapade – November 2024</i></div>
-        <div class="project-role">Project Manager / Back-end Developer / Database Administrator</div>
+
+        <div class="project-title">
+            <i>Enkanto Escapade – November 2024</i>
+        </div>
+
+        <div class="project-role">
+            Project Manager / Back-end Developer / Database Administrator
+        </div>
+
         <p class="project-desc">
-            Developed an endless game featuring obstacles inspired by Filipino folklore, providing players with a challenging and engaging gameplay experience.
+            Developed an endless game featuring obstacles inspired by
+            Filipino folklore, providing players with a challenging
+            and engaging gameplay experience.
         </p>
+
     </section>
 
+
+    <!-- TEAM TRACK -->
     <section class="project">
-        <div class="project-title"><i>Team Track – April 2025</i></div>
-        <div class="project-role">Project Manager / Back-end Developer / Database Administrator</div>
+
+        <div class="project-title">
+            <i>Team Track – April 2025</i>
+        </div>
+
+        <div class="project-role">
+            Project Manager / Back-end Developer / Database Administrator
+        </div>
+
         <p class="project-desc">
-            Developed a mobile application for task tracking and team collaboration, enabling users to manage assignments and monitor project progress efficiently.
+            Developed a mobile application for task tracking and team
+            collaboration, enabling users to manage assignments and
+            monitor project progress efficiently.
         </p>
+
     </section>
 
+
+    <!-- ARANGKADA RENT -->
     <section class="project">
-        <div class="project-title"><i>ArangKada Rent – November 2025</i></div>
-        <div class="project-role">Front-end Developer / UI / UX Designer</div>
+
+        <div class="project-title">
+            <i>ArangKada Rent – November 2025</i>
+        </div>
+
+        <div class="project-role">
+            Front-end Developer / UI / UX Designer
+        </div>
+
         <p class="project-desc">
-            Developed a web-based vehicle rental system to streamline booking, vehicle management, and customer tracking for rental businesses.
+            Developed a web-based vehicle rental system to streamline
+            booking, vehicle management, and customer tracking for
+            rental businesses.
         </p>
+
     </section>
 
+
+    <!-- RENTIFYPRO -->
     <section class="project">
-        <div class="project-title"><i>RentifyPro: Advanced Vehicle Rental System with AI, Blockchain and Analytics – March 2026</i></div>
-        <div class="project-role">Front-end Developer / UI / UX Designer</div>
+
+        <div class="project-title">
+            <i>
+                RentifyPro: Advanced Vehicle Rental System with AI,
+                Blockchain and Analytics – March 2026
+            </i>
+        </div>
+
+        <div class="project-role">
+            Front-end Developer / UI / UX Designer
+        </div>
+
         <p class="project-desc">
-            Developed a peer-to-peer vehicle rental platform enhanced with AI and blockchain technology to ensure secure transactions and smart rental management.
+            Developed a peer-to-peer vehicle rental platform enhanced
+            with AI and blockchain technology to ensure secure
+            transactions and smart rental management.
         </p>
+
     </section>
 
+
+    <!-- SEMINARS AND WORKSHOPS -->
     <section class="section">
-        <h2 class="section-title">SEMINARS AND WORKSHOPS</h2>
+
+        <h2 class="section-title">
+            SEMINARS AND WORKSHOPS
+        </h2>
+
 
         <div class="seminar">
+
             <div class="seminar-title">
-                PYTHON ALCHEMY: BREWING MAGIC AND CODE <span>| 2022 – 2020</span>
+                PYTHON ALCHEMY: BREWING MAGIC AND CODE
+                <span>| 2022 – 2020</span>
             </div>
-            <div class="seminar-title" style="font-weight:400; margin-top:2px;">
+
+            <div
+                class="seminar-title"
+                style="font-weight:400; margin-top:2px;"
+            >
                 FRESHMEN STUDENTS SEMINAR
             </div>
+
         </div>
 
+
         <div class="seminar">
+
             <div class="seminar-title">
-                TECHTALK: A PEEK INTO BUSINESS PROGRAMMING - INTRODUCTION TO SAP <span>| OCTOBER 2025</span>
+                TECHTALK: A PEEK INTO BUSINESS PROGRAMMING -
+                INTRODUCTION TO SAP
+                <span>| OCTOBER 2025</span>
             </div>
-            <div class="seminar-title" style="font-weight:400; margin-top:2px;">
-                FOUNDATIONAL KNOWLEDGE OF SAP AND ITS APPLICATIONS IN BUSINESS PROGRAMMING
+
+            <div
+                class="seminar-title"
+                style="font-weight:400; margin-top:2px;"
+            >
+                FOUNDATIONAL KNOWLEDGE OF SAP AND ITS APPLICATIONS
+                IN BUSINESS PROGRAMMING
             </div>
+
         </div>
+
     </section>
+
 </section>
 
 </body>
 </html>
+```
