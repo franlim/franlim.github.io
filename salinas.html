@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mary Lorraine C. Salinas - CV</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f2f2f2;
+            color: #222;
+            line-height: 1.5;
+        }
+
+        .cv {
+            max-width: 1000px;
+            margin: 30px auto;
+            background: white;
+            display: grid;
+            grid-template-columns: 32% 68%;
+            min-height: 100vh;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        .sidebar {
+            background: #f0f0f0;
+            padding: 42px 30px;
+        }
+
+        .main {
+            padding: 42px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0 0 24px;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            font-size: 15px;
+            letter-spacing: 1.5px;
+            border-bottom: 2px solid #222;
+            padding-bottom: 7px;
+            margin: 28px 0 14px;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            font-size: 18px;
+            margin: 10px 0 3px;
+        }
+
+        p {
+            margin: 6px 0;
+        }
+
+        .contact p {
+            font-size: 14px;
+            overflow-wrap: anywhere;
+        }
+
+        .skills {
+            display: grid;
+            gap: 6px;
+            font-size: 14px;
+        }
+
+        .profile {
+            font-size: 15px;
+            max-width: 700px;
+        }
+
+        .project {
+            margin-bottom: 18px;
+        }
+
+        .project p {
+            font-size: 14px;
+            color: #444;
+        }
+
+        .tagline {
+            font-size: 13px;
+            font-weight: bold;
+            margin-top: 12px;
+        }
+
+        @media (max-width: 700px) {
+            .cv {
+                grid-template-columns: 1fr;
+                margin: 0;
+            }
+
+            .sidebar,
+            .main {
+                padding: 28px 22px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+
+            .cv {
+                margin: 0;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cv">
+
+        <!-- LEFT SIDEBAR -->
+        <aside class="sidebar">
+
+            <h1>
+                SALINAS<br>
+                MARY LORRAINE C.
+            </h1>
+
+            <h2>Contact Information</h2>
+
+            <div class="contact">
+                <p>+63 933 997 9445</p>
+                <p>marylorrainesalinas0511@gmail.com</p>
+            </div>
+
+
+            <h2>Core Work Skills</h2>
+
+            <div class="skills">
+                <div>Communication Skills</div>
+                <div>Flexibility</div>
+                <div>Trainability</div>
+                <div>Adaptability</div>
+            </div>
+
+
+            <h2>Technical Skills</h2>
+
+            <div class="skills">
+                <div>Programming</div>
+                <div>Languages, Tools &amp; Frameworks</div>
+                <div>Visual Studio Code</div>
+                <div>Figma</div>
+                <div>UI/UX</div>
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="main">
+
+            <h2>Profile Summary</h2>
+
+            <p class="profile">
+                A dedicated freshman IT student with a growing passion for
+                technology. Eager to apply classroom learning to real-world
+                projects, with a quick learning curve and a commitment to
+                staying current on industry trends.
+            </p>
+
+
+            <h2>Education and Certification</h2>
+
+            <h3>BS Information Technology</h3>
+            <p>
+                PHINMA University of Pangasinan |
+                August 2023 - Present
+            </p>
+
+            <h3>Senior High School</h3>
+            <p>
+                Colegio de San Juan de Letran - Manaoag |
+                July 2021 - July 2023
+            </p>
+
+            <h3>Junior High School</h3>
+            <p>
+                Colegio de San Juan de Letran - Manaoag |
+                June 2017 - April 2021
+            </p>
+
+
+            <h2>Projects</h2>
+
+            <div class="project">
+                <h3>Hackedman</h3>
+
+                <p>
+                    Hackedman is a word guessing game designed for
+                    programme enthusiasts and word game lovers.
+                    Instead of common phrases, you will guess programming
+                    terms. Can you save your robot from getting hacked?
+                </p>
+            </div>
+
+
+            <div class="project">
+                <h3>Guess the Flag &amp; WinkCo.</h3>
+
+                <p>
+                    Guess the Flag is a game where the player is given
+                    a random country flag for him/her to guess, where
+                    the objective is to achieve the highest score possible
+                    in each game.
+                </p>
+
+                <p>
+                    WinkCo. is a news and media website providing
+                    insightful analysis, in-depth girl and boy news.
+                </p>
+            </div>
+
+
+            <div class="project">
+                <h3>Zomville</h3>
+
+                <p>
+                    A thrilling action-packed game where players fight
+                    off zombies in various scenarios. It combines strategy,
+                    survival, and quick thinking to keep players engaged
+                    as they work to eliminate waves of zombies.
+                </p>
+            </div>
+
+
+            <div class="project">
+                <h3>TeamTrack</h3>
+
+                <p>
+                    TeamTrack is a mobile/web application designed to
+                    help users organize tasks, track progress, and manage
+                    team collaboration through simple boards.
+                </p>
+            </div>
+
+
+            <div class="project">
+                <h3>ArtSpace</h3>
+
+                <p>
+                    ArtSpace is an online platform where artists can
+                    showcase their work, connect with buyers, and gain
+                    exposure and opportunities in the digital marketplace.
+                </p>
+            </div>
+
+
+            <div class="project">
+                <h3>Kapit-Bisig: Relief Distribution Tracking System</h3>
+
+                <p>
+                    Kapit-Bisig is a digital platform that helps local
+                    government units track and manage relief distribution
+                    in disaster-affected barangays. It records and verifies
+                    beneficiary claims in real time to prevent duplicates
+                    and ensure fair distribution.
+                </p>
+            </div>
+
+
+            <p class="tagline">
+                2021 &nbsp; • &nbsp;
+                PYTHONIC ALCHEMY: BREWING MAGIC IN CODE
+            </p>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
