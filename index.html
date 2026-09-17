@@ -25,14 +25,13 @@
     body {
       font-family: Arial, Helvetica, sans-serif;
 
-      /* One Piece inspired ocean blue */
       background: #0b3d5c;
 
       color: #f8f5ed;
 
       min-height: 100vh;
 
-      padding: 50px 24px;
+      padding: 80px 24px;
 
       position: relative;
 
@@ -87,6 +86,7 @@
 
     .container {
       width: 100%;
+
       max-width: 900px;
 
       margin: 0 auto;
@@ -94,41 +94,6 @@
       position: relative;
 
       z-index: 1;
-    }
-
-
-    /* =========================================
-       LOGO
-    ========================================= */
-
-    .logo {
-      width: 58px;
-      height: 58px;
-
-      background: #f8f5ed;
-
-      color: #d62828;
-
-      border-radius: 50%;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      font-size: 23px;
-      font-weight: bold;
-
-      border: 3px solid #d62828;
-
-      margin-bottom: 35px;
-
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-
-      transition: 0.25s ease;
-    }
-
-    .logo:hover {
-      transform: rotate(-8deg) scale(1.05);
     }
 
 
@@ -149,11 +114,13 @@
     }
 
     .subtitle {
-      color: #b9d0dc;
+      color: #f0c75e;
 
       font-size: 17px;
 
-      margin-bottom: 40px;
+      margin-bottom: 32px;
+
+      font-weight: bold;
     }
 
     .subtitle span {
@@ -168,6 +135,8 @@
     ========================================= */
 
     .divider {
+      width: 70%;
+
       height: 2px;
 
       background: #d62828;
@@ -198,12 +167,6 @@
     ========================================= */
 
     li {
-      /*
-        LIGHTER CARD
-        This creates stronger contrast
-        against the blue background.
-      */
-
       background: #f4ead2;
 
       border: 1px solid #d8c79f;
@@ -336,38 +299,13 @@
 
 
     /* =========================================
-       FOOTER
-    ========================================= */
-
-    footer {
-      border-top: 1px solid #39708b;
-
-      margin-top: 40px;
-
-      padding-top: 25px;
-
-      text-align: center;
-
-      color: #9bb6c3;
-
-      font-size: 14px;
-
-      line-height: 1.6;
-    }
-
-    footer span {
-      color: #d62828;
-    }
-
-
-    /* =========================================
        TABLET
     ========================================= */
 
     @media (max-width: 700px) {
 
       body {
-        padding: 40px 20px;
+        padding: 60px 20px;
       }
 
       h1 {
@@ -377,10 +315,12 @@
       .subtitle {
         font-size: 16px;
 
-        margin-bottom: 30px;
+        margin-bottom: 28px;
       }
 
       .divider {
+        width: 80%;
+
         margin-bottom: 28px;
       }
 
@@ -410,23 +350,11 @@
     @media (max-width: 480px) {
 
       body {
-        padding: 28px 16px;
+        padding: 45px 16px;
       }
 
       .container {
         width: 100%;
-      }
-
-
-      /* Logo */
-
-      .logo {
-        width: 52px;
-        height: 52px;
-
-        font-size: 20px;
-
-        margin-bottom: 25px;
       }
 
 
@@ -443,13 +371,15 @@
       .subtitle {
         font-size: 14px;
 
-        margin-bottom: 25px;
+        margin-bottom: 24px;
       }
 
 
       /* Divider */
 
       .divider {
+        width: 85%;
+
         margin-bottom: 22px;
       }
 
@@ -512,17 +442,6 @@
 
         margin-left: 8px;
       }
-
-
-      /* Footer */
-
-      footer {
-        margin-top: 28px;
-
-        padding-top: 20px;
-
-        font-size: 12px;
-      }
     }
 
 
@@ -533,7 +452,7 @@
     @media (max-width: 350px) {
 
       body {
-        padding: 25px 12px;
+        padding: 35px 12px;
       }
 
       h1 {
@@ -542,6 +461,10 @@
 
       .subtitle {
         font-size: 13px;
+      }
+
+      .divider {
+        width: 90%;
       }
 
       a {
@@ -574,22 +497,15 @@
 
 
     <!-- =====================================
-         LOGO
-    ====================================== -->
-
-    <div class="logo">
-      ☠
-    </div>
-
-
-    <!-- =====================================
          HEADER
     ====================================== -->
 
-    <h1>Mayflower CV Directory</h1>
+    <h1>
+      Mayflower CV Directory
+    </h1>
 
     <div class="subtitle">
-      <span>ITE 386</span> — Cloud Programming
+      <span>ITE 386</span> — <span>Cloud Programming</span>
     </div>
 
     <div class="divider"></div>
@@ -603,7 +519,10 @@
 
       <li>
         <a href="lim.html" target="_blank">
-          <span class="number">01</span>
+
+          <span class="number">
+            01
+          </span>
 
           <span class="name">
             Frances Aura Lim CV
@@ -612,13 +531,17 @@
           <span class="arrow">
             →
           </span>
+
         </a>
       </li>
 
 
       <li>
         <a href="fernandez.html" target="_blank">
-          <span class="number">02</span>
+
+          <span class="number">
+            02
+          </span>
 
           <span class="name">
             Fernandez Mar Russel CV
@@ -627,13 +550,17 @@
           <span class="arrow">
             →
           </span>
+
         </a>
       </li>
 
 
       <li>
         <a href="salinas.html" target="_blank">
-          <span class="number">03</span>
+
+          <span class="number">
+            03
+          </span>
 
           <span class="name">
             Mary Lorraine CV
@@ -642,13 +569,17 @@
           <span class="arrow">
             →
           </span>
+
         </a>
       </li>
 
 
       <li>
         <a href="zarate.html" target="_blank">
-          <span class="number">04</span>
+
+          <span class="number">
+            04
+          </span>
 
           <span class="name">
             Zarate Abegail CV
@@ -657,13 +588,17 @@
           <span class="arrow">
             →
           </span>
+
         </a>
       </li>
 
 
       <li>
         <a href="estrada.html" target="_blank">
-          <span class="number">05</span>
+
+          <span class="number">
+            05
+          </span>
 
           <span class="name">
             Estrada Ronald CV
@@ -672,20 +607,12 @@
           <span class="arrow">
             →
           </span>
+
         </a>
       </li>
 
     </ul>
 
-
-    <!-- =====================================
-         FOOTER
-    ====================================== -->
-
-    <footer>
-      <span>☠</span>
-      Mayflower Pirates — ITE 386 Cloud Programming
-    </footer>
 
   </div>
 
