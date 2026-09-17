@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Ronald Estrada Jr. B. - CV</title>
 
   <style>
@@ -18,6 +19,10 @@
       line-height: 1.45;
     }
 
+    /* =========================
+       CV CONTAINER
+    ========================= */
+
     .cv {
       width: 800px;
       max-width: calc(100% - 32px);
@@ -27,22 +32,105 @@
       box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
     }
 
+    /* =========================
+       BACK BUTTON
+    ========================= */
+
+    .back-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+
+      padding: 9px 15px;
+
+      background: white;
+      color: #222;
+
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+
+      border: 1px solid #ccc;
+      border-radius: 6px;
+
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+      transition: all 0.2s ease;
+
+      z-index: 1000;
+    }
+
+    .back-button:hover {
+      background: #222;
+      color: white;
+      border-color: #222;
+      transform: translateX(-2px);
+    }
+
+    /* =========================
+       HEADER
+    ========================= */
+
     header {
       border-bottom: 2px solid #222;
       padding-bottom: 18px;
       margin-bottom: 24px;
     }
 
+    .header-content {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    /* =========================
+       PROFILE PHOTO
+    ========================= */
+
+    .profile-photo {
+      width: 115px;
+      height: 115px;
+
+      border-radius: 50%;
+
+      object-fit: cover;
+
+      border: 1px solid #ccc;
+
+      flex-shrink: 0;
+    }
+
+    /* =========================
+       HEADER INFORMATION
+    ========================= */
+
+    .header-info {
+      flex: 1;
+    }
+
     h1 {
       margin: 0 0 6px;
+
       font-size: 30px;
+
+      color: #222;
     }
 
     .contact {
       margin: 0;
+
       font-size: 14px;
+
       color: #444;
     }
+
+    /* =========================
+       SECTIONS
+    ========================= */
 
     section {
       margin-bottom: 24px;
@@ -50,20 +138,27 @@
 
     h2 {
       font-size: 15px;
+
       letter-spacing: 1.4px;
+
       margin: 0 0 10px;
+
       padding-bottom: 5px;
+
       border-bottom: 1px solid #aaa;
     }
 
     p {
       margin: 5px 0;
+
       font-size: 14px;
     }
 
     ul {
       margin: 6px 0 0 20px;
+
       padding: 0;
+
       font-size: 14px;
     }
 
@@ -73,11 +168,13 @@
 
     .project-title {
       font-weight: bold;
+
       margin-bottom: 2px;
     }
 
     .role {
       font-weight: bold;
+
       margin-bottom: 4px;
     }
 
@@ -85,105 +182,231 @@
       font-weight: bold;
     }
 
+    /* =========================
+       MOBILE RESPONSIVE
+    ========================= */
+
     @media (max-width: 600px) {
+
       .cv {
         padding: 28px 24px;
+
         margin: 16px auto;
+      }
+
+      .header-content {
+        flex-direction: column;
+
+        text-align: center;
+      }
+
+      .profile-photo {
+        width: 110px;
+        height: 110px;
       }
 
       h1 {
         font-size: 25px;
       }
+
+      .contact {
+        font-size: 12px;
+      }
+
+      .back-button {
+        position: static;
+
+        margin: 15px;
+
+        display: inline-flex;
+      }
     }
 
+    /* =========================
+       PRINT
+    ========================= */
+
     @media print {
+
       body {
         background: white;
       }
 
       .cv {
         width: 100%;
+
         max-width: none;
+
         margin: 0;
+
         box-shadow: none;
       }
+
+      .back-button {
+        display: none;
+      }
     }
+
   </style>
 </head>
 
 <body>
 
+  <!-- =========================
+       BACK BUTTON
+  ========================= -->
+
+  <a href="index.html" class="back-button">
+    ← Back
+  </a>
+
+
+  <!-- =========================
+       CV
+  ========================= -->
+
   <main class="cv">
 
-    <!-- HEADER -->
-    <header>
-      <h1>Estrada, Ronald JR. B.</h1>
 
-      <p class="contact">
-        Bugallon, Pangasinan, Philippines |
-        +63 9260123073 |
-        estradaronald287@gmail.com
-      </p>
+    <!-- =========================
+         HEADER
+    ========================= -->
+
+    <header>
+
+      <div class="header-content">
+
+        <!--
+          PUT YOUR PROFILE PHOTO
+          IN THE SAME FOLDER AS THIS HTML FILE.
+
+          Example:
+
+          cv.html
+          profile.jpg
+
+          If your image has another filename,
+          change "profile.jpg" below.
+        -->
+
+        <img
+          src="profile.jpg"
+          alt="Ronald Estrada Jr. B."
+          class="profile-photo"
+        >
+
+        <div class="header-info">
+
+          <h1>
+            Estrada, Ronald JR. B.
+          </h1>
+
+          <p class="contact">
+            Bugallon, Pangasinan, Philippines |
+            +63 9260123073 |
+            estradaronald287@gmail.com
+          </p>
+
+        </div>
+
+      </div>
+
     </header>
 
 
-    <!-- TECHNICAL SKILLS -->
+    <!-- =========================
+         TECHNICAL SKILLS
+    ========================= -->
+
     <section>
-      <h2>TECHNICAL SKILLS</h2>
+
+      <h2>
+        TECHNICAL SKILLS
+      </h2>
 
       <ul>
+
         <li>
-          <span class="label">Programming Languages:</span>
+          <span class="label">
+            Programming Languages:
+          </span>
           Python, SQL
         </li>
 
         <li>
-          <span class="label">Scripting:</span>
+          <span class="label">
+            Scripting:
+          </span>
           Bash
         </li>
 
         <li>
-          <span class="label">Databases:</span>
+          <span class="label">
+            Databases:
+          </span>
           MySQL, PostgreSQL
         </li>
 
         <li>
-          <span class="label">Cloud:</span>
+          <span class="label">
+            Cloud:
+          </span>
           AWS
         </li>
 
         <li>
-          <span class="label">Data Transformation:</span>
+          <span class="label">
+            Data Transformation:
+          </span>
           dbt
         </li>
 
         <li>
-          <span class="label">Version Control:</span>
+          <span class="label">
+            Version Control:
+          </span>
           Git, GitHub
         </li>
+
       </ul>
+
     </section>
 
 
-    <!-- PROFESSIONAL SUMMARY -->
+    <!-- =========================
+         PROFESSIONAL SUMMARY
+    ========================= -->
+
     <section>
-      <h2>PROFESSIONAL SUMMARY</h2>
+
+      <h2>
+        PROFESSIONAL SUMMARY
+      </h2>
 
       <p>
-        Aspiring Junior Data Engineer and fourth-year BSIT student with hands on
-        experience in SQL, Python, AWS, and database management. Passionate about
-        building scalable data pipelines and cloud based data solutions while
-        continuously expanding my technical skills.
+        Aspiring Junior Data Engineer and fourth-year BSIT student with
+        hands-on experience in SQL, Python, AWS, and database management.
+        Passionate about building scalable data pipelines and cloud-based
+        data solutions while continuously expanding my technical skills.
       </p>
+
     </section>
 
 
-    <!-- EDUCATION -->
+    <!-- =========================
+         EDUCATION
+    ========================= -->
+
     <section>
-      <h2>EDUCATION</h2>
+
+      <h2>
+        EDUCATION
+      </h2>
 
       <p>
-        <strong>PHINMA University of Pangasinan</strong>
+        <strong>
+          PHINMA University of Pangasinan
+        </strong>
       </p>
 
       <p>
@@ -193,12 +416,19 @@
       <p>
         (Currently Enrolled)
       </p>
+
     </section>
 
 
-    <!-- PROJECT -->
+    <!-- =========================
+         PROJECT
+    ========================= -->
+
     <section>
-      <h2>PROJECT</h2>
+
+      <h2>
+        PROJECT
+      </h2>
 
       <p class="project-title">
         Bolosan ES Learners' Information Management System
@@ -210,11 +440,15 @@
       </p>
 
       <p>
-        <span class="label">Tech Stack:</span>
+        <span class="label">
+          Tech Stack:
+        </span>
+
         HTML, CSS, JavaScript, Node.js, MongoDB
       </p>
 
       <ul>
+
         <li>
           Developed backend APIs using Node.js to manage learner
           information, grading, and school announcements.
@@ -239,8 +473,11 @@
           Collaborated with the development team to build and
           maintain the system.
         </li>
+
       </ul>
+
     </section>
+
 
   </main>
 
