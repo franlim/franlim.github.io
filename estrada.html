@@ -27,8 +27,8 @@
       width: 800px;
       max-width: calc(100% - 32px);
       margin: 32px auto;
-      background: white;
-      padding: 48px 56px;
+      background: #fff;
+      padding: 42px 48px;
       box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
     }
 
@@ -47,7 +47,7 @@
 
       padding: 9px 15px;
 
-      background: white;
+      background: #fff;
       color: #222;
 
       text-decoration: none;
@@ -66,7 +66,7 @@
 
     .back-button:hover {
       background: #222;
-      color: white;
+      color: #fff;
       border-color: #222;
       transform: translateX(-2px);
     }
@@ -84,7 +84,7 @@
     .header-content {
       display: flex;
       align-items: center;
-      gap: 22px;
+      gap: 20px;
     }
 
     /* =========================
@@ -92,8 +92,8 @@
     ========================= */
 
     .profile-photo {
-      width: 115px;
-      height: 115px;
+      width: 105px;
+      height: 105px;
 
       border-radius: 50%;
 
@@ -110,12 +110,14 @@
 
     .header-info {
       flex: 1;
+      min-width: 0;
     }
 
     h1 {
-      margin: 0 0 6px;
+      margin: 0 0 5px;
 
-      font-size: 30px;
+      font-size: 28px;
+      line-height: 1.15;
 
       color: #222;
     }
@@ -123,9 +125,12 @@
     .contact {
       margin: 0;
 
-      font-size: 14px;
+      font-size: 12.5px;
+      line-height: 1.5;
 
       color: #444;
+
+      overflow-wrap: anywhere;
     }
 
     /* =========================
@@ -133,15 +138,14 @@
     ========================= */
 
     section {
-      margin-bottom: 24px;
+      margin-bottom: 22px;
     }
 
     h2 {
-      font-size: 15px;
-
+      font-size: 14px;
       letter-spacing: 1.4px;
 
-      margin: 0 0 10px;
+      margin: 0 0 9px;
 
       padding-bottom: 5px;
 
@@ -150,16 +154,14 @@
 
     p {
       margin: 5px 0;
-
-      font-size: 14px;
+      font-size: 13px;
     }
 
     ul {
-      margin: 6px 0 0 20px;
-
+      margin: 6px 0 0 19px;
       padding: 0;
 
-      font-size: 14px;
+      font-size: 13px;
     }
 
     li {
@@ -168,13 +170,11 @@
 
     .project-title {
       font-weight: bold;
-
       margin-bottom: 2px;
     }
 
     .role {
       font-weight: bold;
-
       margin-bottom: 4px;
     }
 
@@ -183,20 +183,26 @@
     }
 
     /* =========================
-       MOBILE RESPONSIVE
+       MOBILE
     ========================= */
 
     @media (max-width: 600px) {
 
-      .cv {
-        padding: 28px 24px;
+      body {
+        background: #f2f2f2;
+      }
 
-        margin: 16px auto;
+      .cv {
+        width: calc(100% - 20px);
+        max-width: none;
+
+        padding: 28px 22px;
+
+        margin: 70px auto 20px;
       }
 
       .header-content {
         flex-direction: column;
-
         text-align: center;
       }
 
@@ -206,19 +212,20 @@
       }
 
       h1 {
-        font-size: 25px;
+        font-size: 24px;
       }
 
       .contact {
-        font-size: 12px;
+        font-size: 11.5px;
       }
 
       .back-button {
-        position: static;
+        position: fixed;
 
-        margin: 15px;
+        top: 15px;
+        left: 15px;
 
-        display: inline-flex;
+        padding: 8px 13px;
       }
     }
 
@@ -229,15 +236,16 @@
     @media print {
 
       body {
-        background: white;
+        background: #fff;
       }
 
       .cv {
         width: 100%;
-
         max-width: none;
 
         margin: 0;
+
+        padding: 35px 45px;
 
         box-shadow: none;
       }
@@ -276,19 +284,6 @@
 
       <div class="header-content">
 
-        <!--
-          PUT YOUR PROFILE PHOTO
-          IN THE SAME FOLDER AS THIS HTML FILE.
-
-          Example:
-
-          cv.html
-          profile.jpg
-
-          If your image has another filename,
-          change "profile.jpg" below.
-        -->
-
         <img
           src="profile.png"
           alt="Ronald Estrada Jr. B."
@@ -302,8 +297,10 @@
           </h1>
 
           <p class="contact">
-            Bugallon, Pangasinan, Philippines |
-            +63 9260123073 |
+            Bugallon, Pangasinan, Philippines
+            &nbsp;•&nbsp;
+            +63 9260123073
+            &nbsp;•&nbsp;
             estradaronald287@gmail.com
           </p>
 
@@ -414,7 +411,7 @@
       </p>
 
       <p>
-        (Currently Enrolled)
+        Currently Enrolled
       </p>
 
     </section>
