@@ -15,136 +15,177 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background: #0b1117;
-      color: #f5f1e8;
+
+      /* Ocean */
+      background: #dceff2;
+
+      color: #172b3a;
       min-height: 100vh;
+
       padding: 50px 8%;
     }
 
-    /* Main container */
     .container {
       max-width: 900px;
       margin: auto;
     }
 
-    /* Pirate badge */
+    /* One Piece inspired logo */
     .logo {
       width: 58px;
       height: 58px;
-      background: #f5f1e8;
-      color: #111;
+
+      background: #f4e4bd;
+      color: #b52b2b;
+
       border-radius: 50%;
+
       display: flex;
       align-items: center;
       justify-content: center;
+
+      font-size: 22px;
       font-weight: bold;
-      font-size: 17px;
+
+      border: 3px solid #d19a2a;
+
       margin-bottom: 35px;
 
-      box-shadow: 0 0 0 3px #c9a227;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.12);
     }
 
-    /* Header */
     h1 {
       font-size: 38px;
       margin-bottom: 12px;
+
+      color: #173b5c;
+
       letter-spacing: -1px;
     }
 
     .subtitle {
-      color: #b8c1c9;
+      color: #526a78;
       font-size: 17px;
       margin-bottom: 40px;
     }
 
     .subtitle span {
-      color: #c9a227;
+      color: #b52b2b;
+      font-weight: bold;
     }
 
-    /* Divider */
     .divider {
-      height: 1px;
-      background: #29333c;
+      height: 2px;
+
+      background: #d19a2a;
+
       margin-bottom: 45px;
+      opacity: 0.6;
     }
 
-    /* CV List */
     ul {
       list-style: none;
+
       display: flex;
       flex-direction: column;
+
       gap: 13px;
     }
 
     li {
-      border: 1px solid #303b45;
-      background: #151c23;
-      border-radius: 5px;
-      transition: 0.25s ease;
+      background: #f7efd9;
+
+      border: 1px solid #d8c89f;
+
+      border-radius: 6px;
+
       overflow: hidden;
+
+      transition: 0.25s ease;
+
+      box-shadow: 0 3px 8px rgba(32, 57, 70, 0.08);
     }
 
     li:hover {
       transform: translateX(7px);
-      border-color: #c9a227;
-      background: #1b232c;
-      box-shadow: 0 5px 20px rgba(201, 162, 39, 0.12);
+
+      border-color: #b52b2b;
+
+      box-shadow: 0 7px 18px rgba(181, 43, 43, 0.15);
     }
 
     a {
       text-decoration: none;
-      color: #f5f1e8;
+
+      color: #243746;
+
       display: flex;
+
       align-items: center;
+
       padding: 20px 24px;
+
       font-size: 18px;
+
       font-weight: bold;
     }
 
-    /* Number */
     .number {
       width: 38px;
       height: 38px;
-      border: 1px solid #3c464f;
+
+      border: 2px solid #d19a2a;
+
       border-radius: 50%;
+
       display: flex;
       align-items: center;
       justify-content: center;
 
-      color: #c9a227;
+      color: #b52b2b;
+
       font-size: 14px;
+
       margin-right: 18px;
+
+      background: #fff8e7;
     }
 
-    /* Arrow */
     .arrow {
       margin-left: auto;
-      color: #9ca6ae;
+
+      color: #b52b2b;
+
       font-size: 24px;
+
       transition: 0.25s ease;
     }
 
     li:hover .arrow {
-      color: #e63946;
-      transform: translateX(5px);
+      transform: translateX(6px);
+      color: #d19a2a;
     }
 
-    /* Footer */
     footer {
-      border-top: 1px solid #29333c;
+      border-top: 2px solid #d19a2a;
+
       margin-top: 40px;
+
       padding-top: 28px;
+
       text-align: center;
-      color: #77838d;
+
+      color: #617580;
+
       font-size: 14px;
     }
 
     footer span {
-      color: #c9a227;
+      color: #b52b2b;
     }
 
-    /* Mobile */
     @media (max-width: 600px) {
+
       body {
         padding: 35px 20px;
       }
@@ -165,6 +206,7 @@
       .number {
         width: 34px;
         height: 34px;
+
         margin-right: 13px;
       }
     }
@@ -232,7 +274,8 @@
     </ul>
 
     <footer>
-      <span>☠</span> Mayflower Pirates — ITE 386 Cloud Programming
+      <span>☠</span>
+      Mayflower Pirates — ITE 386 Cloud Programming
     </footer>
 
   </div>
