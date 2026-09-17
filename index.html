@@ -1,13 +1,241 @@
-<h1>Machine Problem - ITE386 Cloud Programming</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Mayflower CV Directory</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b1117;
+      color: #f5f1e8;
+      min-height: 100vh;
+      padding: 50px 8%;
+    }
+
+    /* Main container */
+    .container {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    /* Pirate badge */
+    .logo {
+      width: 58px;
+      height: 58px;
+      background: #f5f1e8;
+      color: #111;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 17px;
+      margin-bottom: 35px;
+
+      box-shadow: 0 0 0 3px #c9a227;
+    }
+
+    /* Header */
+    h1 {
+      font-size: 38px;
+      margin-bottom: 12px;
+      letter-spacing: -1px;
+    }
+
+    .subtitle {
+      color: #b8c1c9;
+      font-size: 17px;
+      margin-bottom: 40px;
+    }
+
+    .subtitle span {
+      color: #c9a227;
+    }
+
+    /* Divider */
+    .divider {
+      height: 1px;
+      background: #29333c;
+      margin-bottom: 45px;
+    }
+
+    /* CV List */
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+    }
+
+    li {
+      border: 1px solid #303b45;
+      background: #151c23;
+      border-radius: 5px;
+      transition: 0.25s ease;
+      overflow: hidden;
+    }
+
+    li:hover {
+      transform: translateX(7px);
+      border-color: #c9a227;
+      background: #1b232c;
+      box-shadow: 0 5px 20px rgba(201, 162, 39, 0.12);
+    }
+
+    a {
+      text-decoration: none;
+      color: #f5f1e8;
+      display: flex;
+      align-items: center;
+      padding: 20px 24px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    /* Number */
+    .number {
+      width: 38px;
+      height: 38px;
+      border: 1px solid #3c464f;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      color: #c9a227;
+      font-size: 14px;
+      margin-right: 18px;
+    }
+
+    /* Arrow */
+    .arrow {
+      margin-left: auto;
+      color: #9ca6ae;
+      font-size: 24px;
+      transition: 0.25s ease;
+    }
+
+    li:hover .arrow {
+      color: #e63946;
+      transform: translateX(5px);
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid #29333c;
+      margin-top: 40px;
+      padding-top: 28px;
+      text-align: center;
+      color: #77838d;
+      font-size: 14px;
+    }
+
+    footer span {
+      color: #c9a227;
+    }
+
+    /* Mobile */
+    @media (max-width: 600px) {
+      body {
+        padding: 35px 20px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .subtitle {
+        font-size: 15px;
+      }
+
+      a {
+        padding: 17px;
+        font-size: 16px;
+      }
+
+      .number {
+        width: 34px;
+        height: 34px;
+        margin-right: 13px;
+      }
+    }
+  </style>
+</head>
 
 <body>
-  <h2>Mayflower CV Directory</h2>
-  <ul>
-    <li><a href="lim.html" target="_blank">Frances Aura Lim CV</a></li>
-    <li><a href="fernandez.html" target="_blank">Fernandez Mar Russel CV</a></li>
-    <li><a href="salinas.html" target="_blank">Mary Lorraine CV</a></li>
-    <li><a href="zarate.html" target="_blank">Zarate Abegail CV</a></li>  
-    <li><a href="estrada.html" target="_blank">Estrada Ronald CV</a></li>
-  </ul>
-</body>
 
+  <div class="container">
+
+    <div class="logo">
+      ☠
+    </div>
+
+    <h1>Mayflower CV Directory</h1>
+
+    <div class="subtitle">
+      <span>ITE 386</span> — Cloud Programming
+    </div>
+
+    <div class="divider"></div>
+
+    <ul>
+
+      <li>
+        <a href="lim.html" target="_blank">
+          <span class="number">01</span>
+          <span>Frances Aura Lim CV</span>
+          <span class="arrow">→</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="fernandez.html" target="_blank">
+          <span class="number">02</span>
+          <span>Fernandez Mar Russel CV</span>
+          <span class="arrow">→</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="salinas.html" target="_blank">
+          <span class="number">03</span>
+          <span>Mary Lorraine CV</span>
+          <span class="arrow">→</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="zarate.html" target="_blank">
+          <span class="number">04</span>
+          <span>Zarate Abegail CV</span>
+          <span class="arrow">→</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="estrada.html" target="_blank">
+          <span class="number">05</span>
+          <span>Estrada Ronald CV</span>
+          <span class="arrow">→</span>
+        </a>
+      </li>
+
+    </ul>
+
+    <footer>
+      <span>☠</span> Mayflower Pirates — ITE 386 Cloud Programming
+    </footer>
+
+  </div>
+
+</body>
+</html>
