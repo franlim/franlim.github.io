@@ -7,6 +7,7 @@
   <title>Mayflower CV Directory</title>
 
   <style>
+
     /* =========================================
        RESET
     ========================================= */
@@ -172,13 +173,15 @@
     ========================================= */
 
     li {
+      position: relative;
+
       background: #f4ead2;
 
       border: 1px solid #d8c79f;
 
       border-radius: 8px;
 
-      overflow: hidden;
+      overflow: visible;
 
       transition:
         transform 0.25s ease,
@@ -188,7 +191,81 @@
 
       box-shadow:
         0 5px 14px rgba(0, 0, 0, 0.16);
+
+      z-index: 0;
     }
+
+
+    /* =========================================
+       GLOWING BORDER
+    ========================================= */
+
+    li::before {
+      content: "";
+
+      position: absolute;
+
+      top: -2px;
+      left: -2px;
+
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+
+      border-radius: 10px;
+
+      background: linear-gradient(
+        45deg,
+        #d62828,
+        #f0c75e,
+        #ffffff,
+        #d62828,
+        #f0c75e,
+        #d62828
+      );
+
+      background-size: 400%;
+
+      z-index: -2;
+
+      filter: blur(7px);
+
+      opacity: 0;
+
+      transition: opacity 0.3s ease;
+
+      animation: cvGlow 8s linear infinite;
+    }
+
+
+    /* =========================================
+       INNER CARD COVER
+    ========================================= */
+
+    li::after {
+      content: "";
+
+      position: absolute;
+
+      inset: 0;
+
+      background: #f4ead2;
+
+      border-radius: 8px;
+
+      z-index: -1;
+
+      transition: background 0.25s ease;
+    }
+
+
+    /* =========================================
+       HOVER GLOW
+    ========================================= */
+
+    li:hover::before {
+      opacity: 0.85;
+    }
+
 
     li:hover {
       transform: translateX(7px);
@@ -199,7 +276,33 @@
 
       box-shadow:
         0 9px 25px rgba(0, 0, 0, 0.22),
-        0 0 15px rgba(214, 40, 40, 0.12);
+        0 0 18px rgba(214, 40, 40, 0.20);
+    }
+
+
+    li:hover::after {
+      background: #fff4d6;
+    }
+
+
+    /* =========================================
+       GLOW ANIMATION
+    ========================================= */
+
+    @keyframes cvGlow {
+
+      0% {
+        background-position: 0 0;
+      }
+
+      50% {
+        background-position: 400% 0;
+      }
+
+      100% {
+        background-position: 0 0;
+      }
+
     }
 
 
@@ -208,6 +311,10 @@
     ========================================= */
 
     a {
+      position: relative;
+
+      z-index: 2;
+
       text-decoration: none;
 
       color: #173b5c;
@@ -264,6 +371,9 @@
       background: #d62828;
 
       color: #ffffff;
+
+      box-shadow:
+        0 0 10px rgba(214, 40, 40, 0.35);
     }
 
 
@@ -300,6 +410,9 @@
       color: #d19a2a;
 
       transform: translateX(6px);
+
+      text-shadow:
+        0 0 8px rgba(209, 154, 42, 0.5);
     }
 
 
@@ -391,6 +504,14 @@
 
         box-shadow:
           0 3px 10px rgba(0, 0, 0, 0.15);
+      }
+
+      li::after {
+        border-radius: 7px;
+      }
+
+      li::before {
+        border-radius: 9px;
       }
 
       a {
